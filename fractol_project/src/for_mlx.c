@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   for_mlx.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbattal <rbattal@student.42kocaeli.com.    +#+  +:+       +#+        */
+/*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 12:56:11 by rbattal           #+#    #+#             */
-/*   Updated: 2023/04/03 11:10:17 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/05 01:16:13 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	setup_mlx(t_fractol *frctl)
 		free_kill_all(frctl);
 	mlx->win = mlx_new_window(mlx->ptr, SIZE_X, SIZE_Y, "fractol");
 	if (mlx->win == NULL)
-		free_kill_all(frctl);ƒ
+		free_kill_all(frctl);
 	mlx->img.ptr = mlx_new_image(mlx->ptr, SIZE_X, SIZE_Y);
 	if (mlx->img.ptr == NULL)
 		free_kill_all(frctl);

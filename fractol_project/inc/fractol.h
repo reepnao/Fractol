@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   fractol.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbattal <rbattal@student.42kocaeli.com.    +#+  +:+       +#+        */
+/*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 13:46:56 by rbattal           #+#    #+#             */
-/*   Updated: 2023/03/31 17:24:19 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/05 02:51:30 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 #include <unistd.h>
 # include "../lib/libmlx/mlx.h"
 
-# define SIZE_X 1000.0
-# define SIZE_Y 1000.0
+# define SIZE_X 6000.0
+# define SIZE_Y 6000.0
 
 typedef struct s_complex	t_complex;
 typedef struct s_mlximg		t_mlximg;

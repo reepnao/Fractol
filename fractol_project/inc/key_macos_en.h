@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   key_macos_en.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbattal <rbattal@student.42kocaeli.com.    +#+  +:+       +#+        */
+/*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 14:15:16 by rbattal           #+#    #+#             */
-/*   Updated: 2023/03/26 14:15:23 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/06 03:28:29 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 # define ARROW_UP			126
 # define ARROW_DOWN			125
 
-# define MOUSE_UP			4
-# define MOUSE_DOWN			5
+# define SCROLL_UP			4
+# define SCROLL_DOWN		5
 
 # define EXIT_ESC			53
 # define MOVE_SPACE			49
@@ -31,5 +31,7 @@
 # define KEY_2				19
 # define KEY_3				20
 # define KEY_4				21
+# define KEY_D				2
+# define KEY_U				32
 
 #endif

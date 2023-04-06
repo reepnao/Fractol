@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   fractal_celtic_mandelbrot.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbattal <rbattal@student.42kocaeli.com.    +#+  +:+       +#+        */
+/*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 12:56:07 by rbattal           #+#    #+#             */
-/*   Updated: 2023/03/26 14:12:54 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/05 02:49:34 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
