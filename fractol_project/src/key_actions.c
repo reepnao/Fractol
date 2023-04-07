@@ -6,7 +6,7 @@
 /*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 14:11:47 by rbattal           #+#    #+#             */
-/*   Updated: 2023/04/06 03:19:04 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/07 00:19:02 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int	key_actions(int key, t_fractol *frctl)
 		set_pov(frctl);
 	else if (key == ARROW_UP || key == ARROW_DOWN)
 		move(key, frctl);
+	else if (key == KEY_D || key == KEY_U)
+		zoom(key, 500, 500, frctl);
 	else if (key == ARROW_LEFT || key == ARROW_RIGHT)
 		move(key, frctl);
 	else if (key == COLOR_PLUS || key == COLOR_MINUS)
