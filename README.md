@@ -6,7 +6,7 @@ One of the first graphical projects at 42 school, fract-ol generates beautiful f
 At execution time, you must specify a fractal to display. You may also provide other optional parameters:
 
 ```shell
-make && ./fractol <names> <options>
+make && ./fractol <names> <options>  || ./fractol <names> <options>
 ```
 Names are:
 * mandelbrot, julia, celtic_mandelbrot, burning_ship.
