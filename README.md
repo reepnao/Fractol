@@ -8,3 +8,9 @@ At execution time, you must specify a fractal to display. You may also provide o
 ```shell
 make && ./fractol <type> <options>
 ```
+
+Types are :
+* ```1```: Mandelbrot fractal
+* ```2```: Julia fractal
+* ```3```: Celtic Mandelbrot fractal
+* ```4```: Burning Ship fractal
