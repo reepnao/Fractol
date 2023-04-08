@@ -14,3 +14,9 @@ Types are :
 * ```2```: Julia fractal
 * ```3```: Celtic Mandelbrot fractal
 * ```4```: Burning Ship fractal
+
+For the Julia fractal set (and only this set), two additional parameters can be specified as calculation values. These represent a complex number that will change the shape of the Julia fractal. They must be fractional numbers between 2.0 and -2.0. For example:
+
+```shell
+./fractol J 0.285 -0.01
+```
