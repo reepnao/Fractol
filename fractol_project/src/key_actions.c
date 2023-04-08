@@ -6,7 +6,7 @@
 /*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 14:11:47 by rbattal           #+#    #+#             */
-/*   Updated: 2023/04/07 00:19:02 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/08 14:25:19 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,8 @@ void	move(int key, t_fractol *frctl)
 	}
 	else if (key == ARROW_DOWN)
 	{
-		frctl->c_min.im -= c_size.im * 0.06;
-		frctl->c_max.im -= c_size.im * 0.06;
+		frctl->c_min.im -= c_size.im * 0.05;
+		frctl->c_max.im -= c_size.im * 0.05;
 	}
 	else if (key == ARROW_LEFT)
 	{

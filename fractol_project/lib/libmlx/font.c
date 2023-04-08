@@ -1,4 +1,4 @@
-/* GIMP RGBA C-Source image dump (font.c) */
+//UI'da kullanılan yazı tiplerini belleğe yükleyerek kullanılabilir hale getiriyor.
 
 static const struct {
   unsigned int 	 width;

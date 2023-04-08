@@ -1,8 +1,4 @@
-// mlx_new_image
-//
-// by Ol
-//
-
+// mlx_new_image.m her komuttan sonra yeni bir görüntü oluşturmak için kullanılır.
 
 #import <Cocoa/Cocoa.h>
 #import <OpenGL/gl3.h>

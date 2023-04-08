@@ -1,5 +1,4 @@
-//  mlx_init_loop.m
-// By Ol
+//Programın başlangıcında bir pencere oluşturur ve görüntüyü ekrana çizer.
 
 #import <Cocoa/Cocoa.h>
 #import <OpenGL/gl3.h>

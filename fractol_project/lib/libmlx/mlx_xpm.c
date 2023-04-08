@@ -1,5 +1,4 @@
-// mlx xpm
-// by ol
+// mlx xpm //xpm dosyalarını okuyarak c dilindeki veri yapıalrına çeviriyor ve ekrana bastırılmasını sağlar.
 
 #include <OpenGL/gl3.h>
 #include <stdlib.h>

@@ -1,3 +1,5 @@
+//Fare olaylarını takip etmek, dinlemek ve işlemek için kullanılan bir dosyadır.
+
 #include	<stdio.h>
 
 #import <Cocoa/Cocoa.h>

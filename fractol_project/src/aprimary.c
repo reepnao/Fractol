@@ -6,7 +6,7 @@
 /*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 12:56:15 by rbattal           #+#    #+#             */
-/*   Updated: 2023/04/05 01:15:59 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/08 12:17:36 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,22 +32,22 @@ t_fractol	*frctl_init(int argc, char **argv)
 
 int	set_pov(t_fractol *frctl)
 {
-	frctl->max_iter = 25;
+	frctl->max_iter = 33;
 	frctl->is_fixed = true;
 	if (SIZE_X == SIZE_Y)
 	{
-		complex_set(&frctl->c_max, 2, 2);
-		complex_set(&frctl->c_min, -2, -2);
+		complex_set(&frctl->c_max, 5, 5);
+		complex_set(&frctl->c_min, -5, -5);
 	}
 	else
 	{
-		complex_set(&frctl->c_min, -2, -2);
+		complex_set(&frctl->c_min, -5, -5);
 		frctl->c_max.im = 2;
 		frctl->c_min.re = (SIZE_X / SIZE_Y
 				* (frctl->c_max.im - frctl->c_min.im)
 				+ frctl->c_min.re);
 	}
-	complex_set(&frctl->c_julia, -0.6, 0.6);
+	complex_set(&frctl->c_julia, -1.6, 0.4);
 	set_color_array(frctl);
 	return (0);
 }

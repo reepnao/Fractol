@@ -6,7 +6,7 @@
 /*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 12:56:13 by rbattal           #+#    #+#             */
-/*   Updated: 2023/04/05 01:16:01 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/08 12:35:34 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	set_color_array(t_fractol *frctl)
 	size_t	i;
 
 	i = 0;
-	while (i <= frctl->max_iter) //25
+	while (i <= frctl->max_iter) //33
 	{
 		frctl->color_scheme[i] = calc_color(frctl, i);
 		i++;
