@@ -8,8 +8,10 @@ At execution time, you must specify a fractal to display. You may also provide o
 ```shell
 make && ./fractol <names> <options>
 ```
+Names are:
+* mandelbrot, julia, celtic_mandelbrot, burning_ship.
 
-You can use after execute this keys :
+You can use this keys after execute :
 * ```1```: for Mandelbrot fractal
 * ```2```: for Julia fractal
 * ```3```: for Celtic Mandelbrot fractal
