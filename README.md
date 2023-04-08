@@ -9,7 +9,7 @@ At execution time, you must specify a fractal to display. You may also provide o
 make && ./fractol <names> <options>  || ./fractol <names> <options>
 ```
 Names are:
-* mandelbrot, julia, celtic_mandelbrot, burning_ship.
+* mandelbrot, julia, celtic_mandelbrot, burning_ship
 
 You can use these keys after execute :
 * ```1```: for Mandelbrot fractal
