@@ -6,5 +6,5 @@ One of the first graphical projects at 42 school, fract-ol generates beautiful f
 At execution time, you must specify a fractal to display. You may also provide other optional parameters:
 
 ```shell
-./fractol <type> <options>
+make && ./fractol <type> <options>
 ```
