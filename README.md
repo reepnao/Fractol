@@ -11,7 +11,7 @@ make && ./fractol <names> <options>
 Names are:
 * mandelbrot, julia, celtic_mandelbrot, burning_ship.
 
-You can use this keys after execute :
+You can use these keys after execute :
 * ```1```: for Mandelbrot fractal
 * ```2```: for Julia fractal
 * ```3```: for Celtic Mandelbrot fractal
