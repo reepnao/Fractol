@@ -6,17 +6,17 @@ One of the first graphical projects at 42 school, fract-ol generates beautiful f
 At execution time, you must specify a fractal to display. You may also provide other optional parameters:
 
 ```shell
-make && ./fractol <type> <options>
+make && ./fractol <names> <options>
 ```
 
-Types are :
-* ```1```: Mandelbrot fractal
-* ```2```: Julia fractal
-* ```3```: Celtic Mandelbrot fractal
-* ```4```: Burning Ship fractal
+You can use after execute this keys :
+* ```1```: for Mandelbrot fractal
+* ```2```: for Julia fractal
+* ```3```: for Celtic Mandelbrot fractal
+* ```4```: for Burning Ship fractal
 
 For the Julia fractal set (and only this set), two additional parameters can be specified as calculation values. These represent a complex number that will change the shape of the Julia fractal. They must be fractional numbers between 2.0 and -2.0. For example:
 
 ```shell
-./fractol J 0.87 -0.13
+./fractol julia 0.87 -0.13
 ```
