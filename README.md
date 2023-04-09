@@ -22,3 +22,6 @@ For the Julia fractal set (and only this set), two additional parameters can be 
 ```shell
 ./fractol julia 0.87 -0.13
 ```
+
+
+New fractals in progress...
