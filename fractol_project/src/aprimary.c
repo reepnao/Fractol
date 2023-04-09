@@ -6,7 +6,7 @@
 /*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 12:56:15 by rbattal           #+#    #+#             */
-/*   Updated: 2023/04/08 12:17:36 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/09 02:59:38 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,29 +25,28 @@ t_fractol	*frctl_init(int argc, char **argv)
 	frctl->mlx = NULL;
 	frctl->color_shift = 0;
 	set_pov(frctl);
-    which_func(argc, argv, frctl);
+	which_func(argc, argv, frctl);
 	return (frctl);
-    
 }
 
 int	set_pov(t_fractol *frctl)
 {
-	frctl->max_iter = 33;
+	frctl->max_iter = 25;
 	frctl->is_fixed = true;
 	if (SIZE_X == SIZE_Y)
 	{
-		complex_set(&frctl->c_max, 5, 5);
-		complex_set(&frctl->c_min, -5, -5);
+		complex_set(&frctl->c_max, 2.4, 2.4);
+		complex_set(&frctl->c_min, -2.4, -2.4);
 	}
 	else
 	{
-		complex_set(&frctl->c_min, -5, -5);
-		frctl->c_max.im = 2;
+		complex_set(&frctl->c_min, -2.4, -2.4);
+		frctl->c_max.im = 2.4;
 		frctl->c_min.re = (SIZE_X / SIZE_Y
 				* (frctl->c_max.im - frctl->c_min.im)
 				+ frctl->c_min.re);
 	}
-	complex_set(&frctl->c_julia, -1.6, 0.4);
+	complex_set(&frctl->c_julia, -0.6, 0.6);
 	set_color_array(frctl);
 	return (0);
 }
@@ -66,9 +65,9 @@ void	which_func(int argc, char **argv, t_fractol *frctl)
 	}
 	else if (argc == 2 && !ft_strncmp(argv[1], "mandelbrot", 11))
 		frctl->fractal_func = mandelbrot;
-	else if (argc == 2 && !ft_strncmp(argv[1], "burning_ship", 9))
+	else if (argc == 2 && !ft_strncmp(argv[1], "burning_ship", 13))
 		frctl->fractal_func = burning_ship;
-	else if (argc == 2 && !ft_strncmp(argv[1], "celtic_mandelbrot", 9))
+	else if (argc == 2 && !ft_strncmp(argv[1], "celtic_mandelbrot", 18))
 		frctl->fractal_func = celtic_mandelbrot;
 	else
 		printf_warning();

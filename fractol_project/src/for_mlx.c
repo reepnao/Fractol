@@ -6,7 +6,7 @@
 /*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 12:56:11 by rbattal           #+#    #+#             */
-/*   Updated: 2023/04/05 01:16:13 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/09 03:01:30 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,5 @@ void	setup_mlx(t_fractol *frctl)
 	mlx_key_hook(mlx->win, key_actions, frctl);
 	mlx_mouse_hook(mlx->win, zoom, frctl);
 	mlx_hook(mlx->win, 17, 0, free_kill_all, frctl);
-
 	mlx_hook(mlx->win, 6, 0, julia_mouse_motion, frctl);
 }

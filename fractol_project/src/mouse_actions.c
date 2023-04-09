@@ -6,7 +6,7 @@
 /*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 14:11:21 by rbattal           #+#    #+#             */
-/*   Updated: 2023/04/07 00:12:49 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/09 03:02:30 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,15 @@ int	zoom(int button, int x, int y, t_fractol *frctl)
 	t_complex	pos;
 	double		zoom;
 
-	if (button == SCROLL_UP || button == SCROLL_DOWN || button == KEY_D || button == KEY_U)
+	if (button == SCROLL_UP || button == SCROLL_DOWN
+		|| button == KEY_D || button == KEY_U)
 	{
 		pos.re = frctl->c_min.re + x * frctl->scale.re;
 		pos.im = frctl->c_max.im - y * frctl->scale.im;
 		if (button == SCROLL_UP || button == KEY_U)
-			zoom = 1.1;
-		else
 			zoom = 0.9;
+		else
+			zoom = 1.1;
 		frctl->c_min.re = pos.re + (frctl->c_min.re - pos.re) * zoom;
 		frctl->c_max.re = pos.re + (frctl->c_max.re - pos.re) * zoom;
 		frctl->c_min.im = pos.im + (frctl->c_min.im - pos.im) * zoom;

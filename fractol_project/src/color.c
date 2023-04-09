@@ -6,7 +6,7 @@
 /*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 12:56:13 by rbattal           #+#    #+#             */
-/*   Updated: 2023/04/08 12:35:34 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/09 03:10:17 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	set_color_array(t_fractol *frctl)
 	size_t	i;
 
 	i = 0;
-	while (i <= frctl->max_iter) //33
+	while (i <= frctl->max_iter)
 	{
 		frctl->color_scheme[i] = calc_color(frctl, i);
 		i++;
@@ -38,7 +38,7 @@ static int	calc_color(t_fractol *frctl, size_t i)
 	double	hop;
 
 	chng = frctl->color_shift;
-    hop = (double) i / frctl->max_iter;
+    hop	= (double)i / frctl->max_iter;
 	if (frctl->color_shift < 3)
 	{
 		rgb[chng % 3] = 9 * (1 - hop) * pow(hop, 2) * 255;

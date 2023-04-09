@@ -6,7 +6,7 @@
 /*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 14:11:29 by rbattal           #+#    #+#             */
-/*   Updated: 2023/04/05 01:16:43 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/08 17:50:23 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,6 @@ char	ft_atoi(char *str)
 
 void	printf_warning(void)
 {
-	write (1, "Unfortunately your input is not valid.\n", 39);
 	write (1, "Please use one of the following parameters: ", 44);
 	write (1, "[mandelbrot, julia, celtic_mandelbrot, burning_ship]\n", 53);
-	write (1, "Sample usage: ./fractol mandelbrot\n", 35);
 }

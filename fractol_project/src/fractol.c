@@ -6,7 +6,7 @@
 /*   By: rbattal <rbattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 14:11:52 by rbattal           #+#    #+#             */
-/*   Updated: 2023/04/05 01:16:34 by rbattal          ###   ########.fr       */
+/*   Updated: 2023/04/09 03:02:07 by rbattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	fractol_loop(t_fractol *frctl)
 	frctl->scale.re = (frctl->c_max.re - frctl->c_min.re) / SIZE_X;
 	frctl->scale.im = (frctl->c_max.im - frctl->c_min.im) / SIZE_Y;
 	y = 0;
-	while (y < SIZE_Y) 
+	while (y < SIZE_Y)
 	{
 		frctl->c.im = frctl->c_max.im - y * frctl->scale.im;
 		x = 0;
