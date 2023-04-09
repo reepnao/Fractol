@@ -24,4 +24,8 @@ For the Julia fractal set (and only this set), two additional parameters can be 
 ```
 
 
+
+
+
+
 New fractals in progress...
